@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="1" ignored="0" total="4" passed="3">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="12906" started-at="2021-08-27T13:50:48Z" finished-at="2021-08-27T13:51:01Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="12906" started-at="2021-08-27T13:50:48Z" finished-at="2021-08-27T13:51:01Z">
+      <class name="apache.DataDrivenTest">
+        <test-method status="PASS" signature="systemPath_ddt()[pri:0, instance:apache.DataDrivenTest@42e26948]" name="systemPath_ddt" is-config="true" duration-ms="3627" started-at="2021-08-27T13:50:48Z" finished-at="2021-08-27T13:50:51Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- systemPath_ddt -->
+        <test-method status="FAIL" signature="loginForm(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:apache.DataDrivenTest@42e26948]" name="loginForm" duration-ms="2198" started-at="2021-08-27T13:50:51Z" data-provider="loginData" finished-at="2021-08-27T13:50:53Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[admin@yourstore.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[admin]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[pass]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:96)
+at org.testng.Assert.failNotEquals(Assert.java:776)
+at org.testng.Assert.assertTrue(Assert.java:44)
+at org.testng.Assert.assertTrue(Assert.java:54)
+at apache.DataDrivenTest.loginForm(DataDrivenTest.java:52)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginForm -->
+        <test-method status="PASS" signature="loginForm(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:apache.DataDrivenTest@42e26948]" name="loginForm" duration-ms="1828" started-at="2021-08-27T13:50:53Z" data-provider="loginData" finished-at="2021-08-27T13:50:55Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[admin@yourstore.co]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[admin]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[fail]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginForm -->
+        <test-method status="PASS" signature="loginForm(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:apache.DataDrivenTest@42e26948]" name="loginForm" duration-ms="1674" started-at="2021-08-27T13:50:55Z" data-provider="loginData" finished-at="2021-08-27T13:50:57Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[admin@yourstore.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[an]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[fail]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginForm -->
+        <test-method status="PASS" signature="loginForm(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:apache.DataDrivenTest@42e26948]" name="loginForm" duration-ms="3363" started-at="2021-08-27T13:50:57Z" data-provider="loginData" finished-at="2021-08-27T13:51:00Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[admin]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[adm]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[fail]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginForm -->
+        <test-method status="PASS" signature="close_ddt()[pri:0, instance:apache.DataDrivenTest@42e26948]" name="close_ddt" is-config="true" duration-ms="170" started-at="2021-08-27T13:51:00Z" finished-at="2021-08-27T13:51:01Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- close_ddt -->
+      </class> <!-- apache.DataDrivenTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
